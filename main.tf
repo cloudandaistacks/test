@@ -5,6 +5,7 @@ provider "aws" {
   region = var.region
 }
 
+
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -18,7 +19,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["719108377761"] # Canonical
 }
 
 resource "aws_instance" "ubuntu" {
